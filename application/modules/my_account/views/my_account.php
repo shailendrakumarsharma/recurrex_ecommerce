@@ -7,10 +7,10 @@
         <?php echo form_open('my-account'); ?>
 
             <h3><?php echo lang('account_information');?></h3>
-
-            <label for="company"><?php echo lang('account_company');?></label>
-            <?php echo form_input(['name'=>'company', 'value'=> assign_value('company', $customer['company'])]);?>
-                
+<!--
+            <label for="company"><?php // echo lang('account_company');?></label>
+            <?php // echo form_input(['name'=>'company', 'value'=> assign_value('company', $customer['company'])]);?>
+           -->     
             <div class="col-nest">
             
                 <div class="col" data-cols="1/2">
@@ -33,11 +33,11 @@
                     <?php echo form_input(['name'=>'phone', 'value'=> assign_value('phone', $customer['phone'])]);?>
                 </div>
             </div>
-
+<!--
             <label class="checklist">
-                <input type="checkbox" name="email_subscribe" value="1" <?php if((bool)$customer['email_subscribe']) { ?> checked="checked" <?php } ?>/> <?php echo lang('account_newsletter_subscribe');?>
+                <input type="checkbox" name="email_subscribe" value="1" <?php // if((bool)$customer['email_subscribe']) { ?> checked="checked" <?php // } ?>/> <?php // echo lang('account_newsletter_subscribe');?>
             </label>
-        
+        -->
             <div style="margin:30px 0px 10px; text-align:center;">
                 <strong><?php echo lang('account_password_instructions');?></strong>
             </div>

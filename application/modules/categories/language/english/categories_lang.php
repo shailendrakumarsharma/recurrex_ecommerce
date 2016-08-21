@@ -16,6 +16,7 @@ $lang['slug'] = 'Slug';
 $lang['hidden'] = 'Hidden';
 $lang['description'] = 'Description';
 $lang['excerpt'] = 'Excerpt';
+$lang['product_date'] = 'Date';
 $lang['image'] = 'Image';
 $lang['sequence'] = 'Sequence';
 $lang['seo_title'] = 'SEO Title';

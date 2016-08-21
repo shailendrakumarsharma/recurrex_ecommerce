@@ -160,6 +160,7 @@ class AdminProducts extends Admin {
         $data['slug'] = '';
         $data['description'] = '';
         $data['excerpt'] = '';
+        $data['date'] = '';
         $data['weight'] = '';
         $data['track_stock'] = '';
         $data['seo_title'] = '';
@@ -219,7 +220,7 @@ class AdminProducts extends Admin {
             $data['slug'] = $product->slug;
             $data['description'] = $product->description;
             $data['excerpt'] = $product->excerpt;
-            
+            $data['date'] = $product->date;
             $data['weight'] = $product->weight;
             $data['track_stock'] = $product->track_stock;
             $data['shippable'] = $product->shippable;
@@ -271,6 +272,7 @@ class AdminProducts extends Admin {
         \CI::form_validation()->set_rules('slug', 'lang:slug', 'trim');
         \CI::form_validation()->set_rules('description', 'lang:description', 'trim');
         \CI::form_validation()->set_rules('excerpt', 'lang:excerpt', 'trim');
+        \CI::form_validation()->set_rules('date', 'lang:date', 'trim');
         \CI::form_validation()->set_rules('weight', 'lang:weight', 'trim|numeric|floatval');
         \CI::form_validation()->set_rules('track_stock', 'lang:track_stock', 'trim|numeric');
         \CI::form_validation()->set_rules('quantity', 'lang:quantity', 'trim|numeric');
@@ -338,6 +340,7 @@ class AdminProducts extends Admin {
             $save['meta'] = \CI::input()->post('meta');
             $save['description'] = \CI::input()->post('description');
             $save['excerpt'] = \CI::input()->post('excerpt');
+            $save['date'] = \CI::input()->post('date');
             $save['weight'] = \CI::input()->post('weight');
             $save['track_stock'] = \CI::input()->post('track_stock');
             $save['fixed_quantity'] = \CI::input()->post('fixed_quantity');
@@ -460,6 +463,7 @@ class AdminProducts extends Admin {
         $data['slug'] = '';
         $data['description'] = '';
         $data['excerpt'] = '';
+        $data['date'] = '';
         $data['track_stock'] = '';
         $data['seo_title'] = '';
         $data['meta'] = '';
@@ -504,6 +508,7 @@ class AdminProducts extends Admin {
             $data['slug']               = $product->slug;
             $data['description']        = $product->description;
             $data['excerpt']            = $product->excerpt;
+            $data['date']            = $product->date;
             $data['quantity']           = $product->quantity;
             $data['taxable']            = $product->taxable;
             $data['fixed_quantity']     = $product->fixed_quantity;
@@ -545,6 +550,7 @@ class AdminProducts extends Admin {
         \CI::form_validation()->set_rules('slug', 'lang:slug', 'trim');
         \CI::form_validation()->set_rules('description', 'lang:description', 'trim');
         \CI::form_validation()->set_rules('excerpt', 'lang:excerpt', 'trim');
+        \CI::form_validation()->set_rules('date', 'lang:date', 'trim');
         \CI::form_validation()->set_rules('taxable', 'lang:taxable', 'trim|numeric');
         \CI::form_validation()->set_rules('fixed_quantity', 'lang:fixed_quantity', 'trim|numeric');
         
@@ -604,7 +610,7 @@ class AdminProducts extends Admin {
             $save['meta'] = \CI::input()->post('meta');
             $save['description'] = \CI::input()->post('description');
             $save['excerpt'] = \CI::input()->post('excerpt');
-            
+            $save['date'] = \CI::input()->post('date');
             foreach($data['groups'] as $group)
             {
                 $save['enabled_'.$group->id] = \CI::input()->post('enabled_'.$group->id);

@@ -22,6 +22,7 @@ $lang['in'] = 'In';
 $lang['main'] = 'Main';
 $lang['disabled'] = 'Disabled';
 $lang['excerpt'] = 'Excerpt';
+$lang['product_date'] = 'Date';
 $lang['price'] = 'Price';
 $lang['saleprice'] = 'Sale Price';
 $lang['weight'] = 'Weight';

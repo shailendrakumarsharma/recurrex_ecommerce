@@ -10,7 +10,7 @@ Class Customers extends CI_Model
             'email'=>'',
             'email_subscribe'=>1,
             'phone'=>'',
-            'company'=>'',
+          //  'company'=>'',
             'password'=>'',
             'active'=>1,
             'group_id'=>1,
@@ -56,7 +56,7 @@ Class Customers extends CI_Model
                 order_by('city', 'ASC')->
                 order_by('address1', 'ASC')->
                 order_by('address2', 'ASC')->
-                order_by('company', 'ASC')->
+            //    order_by('company', 'ASC')->
                 order_by('firstname', 'ASC')->
                 order_by('lastname', 'ASC')->
                 where('customer_id', $id)->

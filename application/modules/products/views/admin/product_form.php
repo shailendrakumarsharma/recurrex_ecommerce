@@ -35,11 +35,16 @@
                         <label><?php echo lang('description');?></label>
                         <?php echo form_textarea(['name'=>'description', 'class'=>'redactor', 'value'=>assign_value('description', $description)]); ?>
                     </div>
-
+                    <!--
                     <div class="form-group">
-                        <label><?php echo lang('excerpt');?></label>
-                        <?php echo form_textarea(['name'=>'excerpt', 'value'=>assign_value('excerpt', $excerpt), 'class'=>'redactor']); ?>
-                    </div>
+                        <label><?php // echo lang('excerpt');?></label>
+                        <?php // echo form_textarea(['name'=>'excerpt', 'value'=>assign_value('excerpt', $excerpt), 'class'=>'redactor']); ?>
+                    </div>  -->
+                   
+                    <div class="form-group">
+                        <label><?php echo lang('product_date');?></label>
+                        <?php  echo form_input(['name'=>'date', 'value'=>assign_value('date', $date), 'class'=>'form-control']); ?>
+                    </div>  
 
                     <fieldset>
                         <legend><?php echo lang('inventory');?></legend>
@@ -315,6 +320,10 @@
                             <label for="price"><?php echo lang('price');?></label>
                             <?php echo form_input(['name'=>'price_'.$group->id, 'value'=>assign_value('price_'.$group->id, ${'price_'.$group->id}), 'class'=>'form-control']);?>
                         </div>
+
+
+
+
                         <div class="col-md-6">
                             <label for="saleprice"><?php echo lang('saleprice');?></label>
                             <?php echo form_input(['name'=>'saleprice_'.$group->id, 'value'=>assign_value('saleprice_'.$group->id, ${'saleprice_'.$group->id}), 'class'=>'form-control']);?>
