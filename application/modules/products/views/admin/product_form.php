@@ -18,8 +18,11 @@
                     <li><a href="#product_downloads" data-toggle="tab"><?php echo lang('digital_content');?></a></li>
                     <?php endif;?>
                     <li><a href="#product_categories" data-toggle="tab"><?php echo lang('categories');?></a></li>
-                    <li><a href="#ProductOptions" data-toggle="tab"><?php echo lang('options');?></a></li>
-                    <li><a href="#product_related" data-toggle="tab"><?php echo lang('related_products');?></a></li>
+                   <!--
+                    <li><a href="#ProductOptions" data-toggle="tab"><?php // echo lang('options');?></a></li>
+                    
+                    <li><a href="#product_related" data-toggle="tab"><?php // echo lang('related_products');?></a></li> -->
+
                     <li><a href="#product_photos" data-toggle="tab"><?php echo lang('images');?></a></li>
                 </ul>
             </div>
@@ -264,7 +267,7 @@
                             <div class="form-group">
                                 <select class="form-control" id="product_list" size="5" style="margin:0px;"></select>
                             </div>
-                            <button type="button" onclick="add_related_product();return false;" class="btn btn-primary btn-block" title="Add Related Product"><?php echo lang('add_related_product');?></button>
+                            <button type="button" onclick="add_related_product();return false;" class="btn btn-primary btn-block" title="Add Related Product"><?php // echo lang('add_related_product');?></button>
                         </div>
 
                         <div class="col-md-8">

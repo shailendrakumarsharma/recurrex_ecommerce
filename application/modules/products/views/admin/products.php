@@ -63,7 +63,7 @@ function areyousure()
 <div class="text-right form-group">
     <button class="btn btn-primary" href="#"><i class="icon-ok"></i> <?php echo lang('bulk_save');?></button>
     <a class="btn btn-primary" style="font-weight:normal;"href="<?php echo site_url('admin/products/form');?>"><i class="icon-plus"></i> <?php echo lang('add_new_product');?></a>
-    <a class="btn btn-primary" style="font-weight:normal;"href="<?php echo site_url('admin/products/gift-card-form');?>"><i class="icon-plus"></i> <?php echo lang('add_new_gift_card');?></a>
+   <!-- <a class="btn btn-primary" style="font-weight:normal;"href="<?php // echo site_url('admin/products/gift-card-form');?>"><i class="icon-plus"></i> <?php // echo lang('add_new_gift_card');?></a>  -->
 </div>
     <table class="table table-striped">
         <thead>
