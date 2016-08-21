@@ -188,7 +188,9 @@
             <div class="productDescription">
                 <?php echo (new content_filter($product->description))->display();?>
             </div>
-
+            <div class="productdate">
+                <?php echo (new content_filter($product->date))->display();?>
+            </div>
         </div>
 
     </div>

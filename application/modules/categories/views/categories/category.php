@@ -12,8 +12,13 @@
     <div class="productsFilter">
         <div class="pull-right">
             <select id="sort">
-                <option<?php echo($sort=='name' && $dir == 'ASC')?' selected="selected"':'';?> value="<?php echo site_url('category/'.$slug.'/name/ASC/'.$page);?>"><?php echo lang('sort_by_name_asc');?></option>
-                <option<?php echo($sort=='name' && $dir == 'DESC')?' selected="selected"':'';?>  value="<?php echo site_url('category/'.$slug.'/name/DESC/'.$page);?>"><?php echo lang('sort_by_name_desc');?></option>
+            <!--
+                <option<?php // echo($sort=='name' && $dir == 'ASC')?' selected="selected"':'';?> value="<?php // echo site_url('category/'.$slug.'/name/ASC/'.$page);?>"><?php // echo lang('sort_by_name_asc');?></option>
+                <option<?php // echo($sort=='name' && $dir == 'DESC')?' selected="selected"':'';?>  value="<?php // echo site_url('category/'.$slug.'/name/DESC/'.$page);?>"><?php // echo lang('sort_by_name_desc');?></option>
+             -->
+
+                <option<?php  echo($sort=='date' && $dir == 'ASC')?' selected="selected"':'';?> value="<?php  echo site_url('category/'.$slug.'/date/ASC/'.$page);?>"><?php  echo lang('sort_by_date_asc');?></option>
+                <option<?php  echo($sort=='date' && $dir == 'DESC')?' selected="selected"':'';?>  value="<?php  echo site_url('category/'.$slug.'/date/DESC/'.$page);?>"><?php  echo lang('sort_by_date_desc');?></option>
                 <option<?php echo($sort=='price' && $dir == 'ASC')?' selected="selected"':'';?>  value="<?php echo site_url('category/'.$slug.'/price/ASC/'.$page);?>"><?php echo lang('sort_by_price_asc');?></option>
                 <option<?php echo($sort=='price' && $dir == 'DESC')?' selected="selected"':'';?>  value="<?php echo site_url('category/'.$slug.'/price/DESC/'.$page);?>"><?php echo lang('sort_by_price_desc');?></option>
             </select>

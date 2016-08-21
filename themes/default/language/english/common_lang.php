@@ -76,6 +76,8 @@ $lang['sort_by_name_asc'] = 'Sort by name A to Z';
 $lang['sort_by_name_desc'] = 'Sort by name Z to A';
 $lang['sort_by_price_asc'] = 'Sort by price Low to High';
 $lang['sort_by_price_desc'] = 'Sort by price High to Low';
+$lang['sort_by_date_asc'] = 'Sort by date Low to High';
+$lang['sort_by_date_desc'] = 'Sort by date High to Low';
 
 $lang['products'] = 'Products';
 $lang['out_of_stock'] = 'Out of Stock';
